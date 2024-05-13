@@ -11,12 +11,12 @@
 echo '<article class="' . esc_attr( join( ' ', get_post_class() ) ) . '">';
 
 if ( be_has_action( 'tha_entry_top' ) ) {
-	echo '<header class="entry-header">';
+	echo '<header class="entry-header has-global-padding is-layout-constrained">';
 	tha_entry_top();
 	echo '</header>';
 }
 
-echo '<div class="entry-content">';
+echo '<div class="entry-content has-global-padding is-layout-constrained">';
 tha_entry_content_before();
 the_content();
 
