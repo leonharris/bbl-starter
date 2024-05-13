@@ -127,6 +127,14 @@ if ( ! function_exists( 'be_setup' ) ) :
 		// -- Responsive embeds
 		add_theme_support( 'responsive-embeds' );
 
+		// Register Nav Menus
+
+		register_nav_menus(
+			[
+				'primary' => esc_html__( 'Primary Navigation Menu', 'bestarter_textdomain' ),
+			]
+		);
+
 	}
 
 endif;

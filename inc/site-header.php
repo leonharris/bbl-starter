@@ -9,18 +9,16 @@
  * @license      GPL-2.0+
  **/
 
-/**
- * Register nav menus
- */
-function be_register_menus() {
-	register_nav_menus(
-		[
-			'primary' => esc_html__( 'Primary Navigation Menu', 'bestarter_textdomain' ),
-		]
-	);
 
+/**
+ * Theme Colour
+ */
+
+function bbl_theme_color() {
+	echo '<meta name="theme-color" content="#000000" />';
 }
-add_action( 'after_setup_theme', 'be_register_menus' );
+add_action('tha_head_top', 'bbl_theme_color');
+
 
 /**
  * Site Header
