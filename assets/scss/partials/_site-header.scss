@@ -10,7 +10,6 @@
 		grid-template-columns: 200px 1fr;
 	}
 
-
 	&__toggles {
 		display: flex;
 		flex-wrap: nowrap;
@@ -39,13 +38,13 @@
 	padding: 0;
 	text-align: center;
 
-	@include size( 44px );
+	@include size(44px);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
 	svg {
-		@include size( 24px );
+		@include size(24px);
 	}
 
 	.close {
@@ -53,7 +52,6 @@
 	}
 
 	&.active {
-
 		.close {
 			display: inline;
 		}
@@ -67,7 +65,7 @@
 /* Admin Bar
 --------------------------------------------- */
 
-@include media(">782px" ) {
+@include media(">782px") {
 	.admin-bar .site-container {
 		padding-top: 32px;
 	}
@@ -83,7 +81,6 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .nav-menu {
-
 	& > * {
 		line-height: 0;
 	}
@@ -106,12 +103,12 @@
 			display: block;
 			font-size: var(--wp--preset--font-size--small);
 			position: relative;
-			padding: var(--wp--custom--layout--padding);
+			padding: var(--wp--custom--spacing--gap);
 			text-decoration: none;
 		}
 
 		&.menu-item-has-children > a {
-			padding-right: calc( var(--wp--custom--layout--padding) + 6px );
+			padding-right: calc(var(--wp--custom--spacing--gap) + 6px);
 		}
 
 		&:hover > a {
@@ -137,17 +134,14 @@
 	}
 
 	@include media(">mobile_menu") {
-
 		.menu {
 			display: flex;
 			justify-content: flex-end;
 		}
 
 		.menu-item {
-
 			&:hover,
 			&:focus-within {
-
 				& > .sub-menu {
 					left: auto;
 					opacity: 1;
@@ -192,10 +186,10 @@
 			top: 0;
 			right: 0;
 			transform: none;
-			@include size( 44px );
+			@include size(44px);
 
 			svg {
-				@include size( 18px );
+				@include size(18px);
 			}
 
 			&:not(.expanded) {

@@ -2,10 +2,10 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .block-area-before-footer {
-	padding: var(--wp--custom--layout--block-gap-large) var(--wp--custom--layout--padding);
+	padding: var(--wp--custom--layout--block-gap-large) var(--wp--custom--spacing--gap);
 
 	& > * {
-		max-width: var(--wp--custom--layout--wide);
+		max-width: var(--wp--style--global--wide-size);
 	}
 }
 
