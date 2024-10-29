@@ -10,8 +10,6 @@
 
 use BEStarter\Block_Areas;
 
-echo '</div>'; // .site-inner
-
 Block_Areas\show( 'before-footer' );
 
 tha_footer_before();

@@ -30,4 +30,3 @@ echo '<div class="site-container">';
 		tha_header_bottom();
 	echo '</div></header>';
 	tha_header_after();
-	echo '<div class="site-inner" id="main-content">';
